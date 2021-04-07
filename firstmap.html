@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>실시간 버스 위치</title>
+</head>
+
+<body>
+  <div id="map" style="width:100%; height: 100vh;"></div>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPMa6_fpYRHCVJLGFTiZBWwbSwSBEm60w&callback=initMap"></script>
+  <script>
+    function initMap() {
+      var chunju = { lat: 36.96981663364983,lng: 127.87131627037276 };
+      var map = new google.maps.Map(
+        document.getElementById('map'), {
+          zoom: 12,
+          center: chunju
+        });
+    }
+  </script>
+</body>
+</html>
